@@ -1,0 +1,22 @@
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+}
+
+.swiper-slide .swiper-image {
+  display: block;
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .swiper-slide .swiper-image {
+    display: block;
+    width: 350px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+}

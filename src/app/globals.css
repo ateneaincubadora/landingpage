@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-shadow {
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+@font-face {
+  font-family: "Helvetica Regular";
+  src:
+    url("/assets/fonts/helvetica-regular.woff2") format("woff2"),
+    url("/assets/fonts/helvetica-regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Bold Condensed";
+  src:
+    url("/assets/fonts/helvetica-bold-condensed.woff2") format("woff2"),
+    url("/assets/fonts/helvetica-bold-condensed.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Bold";
+  src:
+    url("/assets/fonts/helvetica-bold.woff2") format("woff2"),
+    url("/assets/fonts/helvetica-bold.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+
+body {
+  font-family: "Helvetica Regular", sans-serif;
+}
+
+.font-helvetica-bold-condensed {
+  font-family: "Helvetica Bold Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.font-helvetica-bold {
+  font-family: "Helvetica Bold", sans-serif;
+  font-weight: bold;
+}
+
+/* Swiper Styles */
+.swiper-slide {
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.6);
+}
+
+.swiper-slide-active {
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
