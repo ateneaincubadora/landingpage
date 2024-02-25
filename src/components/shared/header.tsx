@@ -4,32 +4,46 @@ import { useEffect, useState } from "react";
 
 import Nav from "./nav";
 
+const BACKGROUND_COLOR = {
+  WHITE: "bg-white/40",
+  BLACK: "bg-black/85",
+};
+
 export default function Header() {
-  const [scrollClass, setScrollClass] = useState("bg-white/40");
+  const [background, setBackground] = useState(BACKGROUND_COLOR.WHITE);
+  const [mouseOverHeader, setMouseOverHeader] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.pageYOffset;
+    const heroHeight = document.getElementById("hero")?.offsetHeight || 0;
+
+    currentScrollPos > heroHeight - 150
+      ? setBackground(BACKGROUND_COLOR.BLACK)
+      : setBackground(BACKGROUND_COLOR.WHITE);
+
+    const visible = prevScrollPos > currentScrollPos || currentScrollPos < 10;
+    setPrevScrollPos(currentScrollPos);
+    setVisible(visible);
+  };
+
+  const handleMouseEnter = () => setMouseOverHeader(true);
+
+  const handleMouseLeave = () => setMouseOverHeader(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollY = window.scrollY || window.pageYOffset;
-      const heroHeight = document.getElementById("hero")?.offsetHeight || 0;
-      const scrollThreshold = heroHeight;
-
-      if (scrollY > scrollThreshold - 150) {
-        setScrollClass("bg-black/85");
-      } else {
-        setScrollClass("bg-white/40");
-      }
-    };
-
-    document.addEventListener("scroll", handleScroll);
-    return () => {
-      document.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [prevScrollPos]);
 
   return (
     <header
-      id="header"
-      className={`fixed left-0 top-0 z-50 h-[6.125rem] w-full overflow-y-hidden ${scrollClass}  overflow-x-hidden px-6 transition-all duration-300 ease-in-out lg:px-28`}
+      className={`${background} fixed left-0  z-50 w-full overflow-y-hidden transition-all duration-500 ease-in-out lg:px-28 ${
+        visible || mouseOverHeader ? "opacity-100" : "opacity-0"
+      }`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       <Nav />
     </header>
