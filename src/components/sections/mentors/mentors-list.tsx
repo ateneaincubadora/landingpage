@@ -5,6 +5,7 @@ import { mentorsCards } from "@/consts/mentors-cards";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "./mentors.styles.css";
+import { useRef } from "react";
 
 const breakpoints = {
   320: {
@@ -15,22 +16,32 @@ const breakpoints = {
   },
 };
 
-export default function MentorsList() {
+interface MentorsListProps {
+  onDescription: (desc: string) => void;
+}
+
+export default function MentorsList({ onDescription }: MentorsListProps) {
+  const swiperRef = useRef<any>(null);
+
+  const handleSlideChange = () => {
+    const activeSlideIndex = swiperRef.current.swiper.realIndex;
+    const activeMentor = mentorsCards[activeSlideIndex];
+    onDescription(activeMentor.description);
+  };
+
   return (
     <Swiper
-      effect={"coverflow"}
-      breakpoints={breakpoints}
-      centeredSlides={true}
-      slidesPerView={"auto"}
-      coverflowEffect={{
-        rotate: 6,
-        depth: 300,
-        modifier: 1,
-        slideShadows: false,
-      }}
-      initialSlide={4}
-      loop={true}
+      className="mx-auto w-[100vw] overflow-hidden lg:w-auto"
       modules={[Pagination, EffectCoverflow, Navigation]}
+      onSlideChange={handleSlideChange}
+      breakpoints={breakpoints}
+      slidesPerView={"auto"}
+      centeredSlides={true}
+      effect={"coverflow"}
+      initialSlide={4}
+      ref={swiperRef}
+      loop={true}
+      speed={500}
       navigation={{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -40,8 +51,12 @@ export default function MentorsList() {
         el: ".swiper-pagination",
         clickable: true,
       }}
-      className="mx-auto w-[100vw] overflow-hidden lg:w-auto"
-      speed={500}
+      coverflowEffect={{
+        rotate: 6,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      }}
     >
       {mentorsCards.map((mentor) => (
         <SwiperSlide key={mentor.id}>

@@ -11,7 +11,7 @@ export default function AboutUs() {
   return (
     <section
       id="about-us"
-      className="flex h-auto w-full flex-col items-center justify-center gap-y-6 bg-grayish-light bg-about-us-background bg-cover  bg-center bg-no-repeat px-6 pb-8 pt-28 lg:min-h-screen lg:gap-y-12 lg:bg-contain lg:px-28 lg:py-0  lg:pt-16"
+      className="flex h-auto w-full flex-col items-center justify-center gap-y-6 bg-grayish-light bg-about-us-background bg-cover bg-center bg-no-repeat px-6 pb-8 pt-28 lg:min-h-screen lg:gap-y-12 lg:bg-contain lg:px-28 lg:py-0"
     >
       <motion.div
         {...configMotion}

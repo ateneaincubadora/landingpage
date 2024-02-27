@@ -2,10 +2,15 @@
 
 import { configMotion } from "@/utils/config-motion";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 import MentorsList from "./mentors-list";
 
 export default function Mentors() {
+  const [description, setDescription] = useState("");
+
+  const onDescription = (desc: string) => setDescription(desc);
+
   return (
     <section
       id="mentors"
@@ -19,7 +24,7 @@ export default function Mentors() {
         }}
         transition={{ delay: 0.4, duration: 0.6 }}
       >
-        <MentorsList />
+        <MentorsList onDescription={onDescription} />
       </motion.section>
       <motion.p
         {...configMotion}
@@ -30,8 +35,7 @@ export default function Mentors() {
         transition={{ delay: 0.4, duration: 0.4 }}
         className="w-auto text-center text-xl md:w-[36rem]"
       >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure voluptatem
-        id fuga adipisicing elit.
+        {description}
       </motion.p>
     </section>
   );
