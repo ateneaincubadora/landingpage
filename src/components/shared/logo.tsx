@@ -1,14 +1,12 @@
-import Image from "next/image";
 
 export default function Logo() {
   return (
-    <Image
+    <img
       src="/assets/logo.webp"
       alt="Atenea Logo"
       width={64}
       height={64}
-      className="h-auto w-auto object-contain"
-      priority={true}
+      className="h-[98px] w-[64px] object-contain"
     />
   );
 }

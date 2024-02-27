@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import Title from "@/components/ui/title";
 import MembersList from "./members-list";
 
-import Image from "next/image";
 
 export default function Ehance() {
   return (
@@ -14,13 +13,12 @@ export default function Ehance() {
       id="enhance"
       className="relative flex h-auto w-full flex-col items-center justify-start overflow-x-hidden bg-grayish-light  px-6 pb-8 pt-[7rem] text-white md:flex-row lg:min-h-screen lg:px-28 lg:pb-12 lg:pt-[6rem] "
     >
-      <Image
+      <img
         src="/assets/vector-rectangle.webp"
         height={600}
         width={600}
         alt="triangle vector"
         className=" absolute right-0 top-0 hidden h-screen w-auto object-contain lg:block"
-        priority={true}
       />
       <div className="flex flex-col items-center gap-6 lg:flex-row lg:items-end lg:gap-4 ">
         <section className="relative  z-20">
@@ -33,12 +31,10 @@ export default function Ehance() {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="relative h-96 w-80 lg:h-[34rem] lg:w-[20.5rem]"
           >
-            <Image
+            <img
               src="/assets/video-test.webp"
               alt="Video test"
-              fill
               className="object-contain"
-              sizes="(min-width : 640px) 20rem, (min-width : 1024px) 20rem"
             />
           </motion.div>
 

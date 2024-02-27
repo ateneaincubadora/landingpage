@@ -4,7 +4,6 @@ import { configMotion } from "@/utils/config-motion";
 import { motion } from "framer-motion";
 
 import Box from "@/components/ui/box";
-import Image from "next/image";
 
 interface CardI {
   id: number;
@@ -29,7 +28,7 @@ export default function Card({ card }: CardProps) {
       className={`card group relative flex flex-col items-center gap-y-3`}
     >
       <header className="transition-all duration-1000 group-hover:rotate-[360deg]">
-        <Image
+        <img
           src={card.icon}
           height="112"
           width="112"
