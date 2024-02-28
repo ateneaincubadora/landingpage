@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
 import MenuSocials from "./menu-socials";
-import MenuMobile from "./nav-mobile";
+import NavMobile from "./nav-mobile";
 import Logo from "../logo";
 import Menu from "./menu";
 
@@ -35,7 +35,7 @@ export default function Nav() {
       <Menu className="hidden lg:flex" />
       <MenuSocials className="hidden lg:flex" />
 
-      <MenuMobile />
+      <NavMobile />
     </nav>
   );
 }

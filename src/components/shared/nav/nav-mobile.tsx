@@ -3,7 +3,7 @@ import { configMotion } from "@/utils/config-motion";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-import MenuMobile from "./menu-mobile";
+import AsideMobile from "./aside-mobile";
 
 export default function NavMobile() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +45,7 @@ export default function NavMobile() {
           </svg>
         )}
       </motion.button>
-      <MenuMobile isOpen={isOpen} />
+      <AsideMobile isOpen={isOpen} />
     </>
   );
 }
