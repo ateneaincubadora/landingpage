@@ -37,7 +37,7 @@ export default function Hero() {
           visible: { opacity: 1, y: 0, x: -130 },
         }}
         transition={{ delay: 0.3, duration: 0.6 }}
-        className="absolute bottom-4 left-1/2 -translate-x-1/2  bg-black/50 px-14 pt-12 "
+        className="absolute bottom-4 left-1/2 -translate-x-1/2 px-14"
       >
         <Link
           spy={true}
