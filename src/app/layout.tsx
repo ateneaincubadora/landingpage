@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 
 import Header from "@/components/shared/header";
+import Footer from "@/components/shared/footer";
 
 import "./globals.css";
 
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
       <Script
         src="https://assets.calendly.com/assets/external/widget.js"

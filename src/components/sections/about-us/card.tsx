@@ -32,7 +32,7 @@ export default function Card({ card }: CardProps) {
           src={card.icon}
           height="112"
           width="112"
-          alt="placeholder"
+          alt={`Icono redondeado representando ${card.title}`}
           className="w- h-28 w-28 rounded-full object-contain"
         />
       </header>

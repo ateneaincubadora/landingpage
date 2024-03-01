@@ -1,4 +1,5 @@
 import { configMotion } from "@/utils/config-motion";
+import { navItems } from "@/consts/nav-item";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { useState } from "react";
@@ -7,39 +8,6 @@ import { cn } from "@/utils/cn";
 interface MenuProps {
   className?: string;
 }
-
-const navItems = [
-  {
-    id: 1,
-    label: "INICIO",
-    to: "hero",
-  },
-  {
-    id: 2,
-    label: "NOSOTROS",
-    to: "about-us",
-  },
-  {
-    id: 3,
-    label: "POTENCIAR",
-    to: "enhance",
-  },
-  {
-    id: 4,
-    label: "INCUBADOS",
-    to: "incubated",
-  },
-  {
-    id: 5,
-    label: "MENTORES",
-    to: "mentors",
-  },
-  {
-    id: 6,
-    label: "CONTACTANOS",
-    to: "contact",
-  },
-];
 
 export default function Menu({ className }: MenuProps) {
   const [activeLink, setActiveLink] = useState("");

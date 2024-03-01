@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import Title from "@/components/ui/title";
 import MembersList from "./members-list";
 
-
 export default function Ehance() {
   return (
     <section
@@ -17,7 +16,7 @@ export default function Ehance() {
         src="/assets/vector-rectangle.webp"
         height={600}
         width={600}
-        alt="triangle vector"
+        alt="Rectangulo vectorizado"
         className=" absolute right-0 top-0 hidden h-screen w-auto object-contain lg:block"
       />
       <div className="flex flex-col items-center gap-6 lg:flex-row lg:items-end lg:gap-4 ">
@@ -33,7 +32,7 @@ export default function Ehance() {
           >
             <img
               src="/assets/video-test.webp"
-              alt="Video test"
+              alt="Imagen representando un video"
               className="object-contain"
             />
           </motion.div>
