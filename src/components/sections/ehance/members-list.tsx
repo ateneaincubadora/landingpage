@@ -3,18 +3,21 @@ import Card from "./card";
 const cards = [
   {
     id: 1,
-    name: "Gastón Palumbo",
-    rol: "Rol - 1",
+    name: "Javier Sancho",
+    rol: "Founder",
+    image: "/assets/images/javier-sancho.webp",
   },
   {
     id: 2,
-    name: "Nahuel Plano",
-    rol: "Rol - 2",
+    name: "Francisco Pardo",
+    rol: "CEO",
+    image: "/assets/images/francisco-pardo.webp",
   },
   {
     id: 3,
-    name: "Agustin Montenovo",
-    rol: "Rol - 3",
+    name: "Jeremías Carrió",
+    rol: "Co-founder",
+    image: "/assets/images/jeremias-carrio.webp",
   },
 ];
 
