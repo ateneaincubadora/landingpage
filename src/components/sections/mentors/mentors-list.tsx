@@ -31,17 +31,21 @@ export default function MentorsList({ onDescription }: MentorsListProps) {
 
   return (
     <Swiper
-      className="mx-auto w-[100vw] overflow-hidden lg:w-auto"
-      modules={[Pagination, EffectCoverflow, Navigation]}
+      ref={swiperRef}
+      effect={"coverflow"}
       onSlideChange={handleSlideChange}
       breakpoints={breakpoints}
-      slidesPerView={"auto"}
       centeredSlides={true}
-      effect={"coverflow"}
+      slidesPerView={"auto"}
+      coverflowEffect={{
+        rotate: 6,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      }}
       initialSlide={4}
-      ref={swiperRef}
       loop={true}
-      speed={500}
+      modules={[Pagination, EffectCoverflow, Navigation]}
       navigation={{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -51,12 +55,8 @@ export default function MentorsList({ onDescription }: MentorsListProps) {
         el: ".swiper-pagination",
         clickable: true,
       }}
-      coverflowEffect={{
-        rotate: 6,
-        depth: 300,
-        modifier: 1,
-        slideShadows: false,
-      }}
+      className="mx-auto h-full w-[100vw] overflow-hidden lg:w-auto"
+      speed={500}
     >
       {mentorsCards.map((mentor) => (
         <SwiperSlide key={mentor.id}>
