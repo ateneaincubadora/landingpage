@@ -69,9 +69,11 @@ export default function MentorsList({ onDescription }: MentorsListProps) {
         </SwiperSlide>
       ))}
 
-      <div className="swiper-pagination"></div>
-      <button className="swiper-button-next "></button>
-      <button className="swiper-button-prev "></button>
+      <div className="mentors-pagination">
+        <div className="swiper-pagination"></div>
+      </div>
+      <button className="swiper-button-next button-mentors-next"></button>
+      <button className="swiper-button-prev button-mentors-prev"></button>
     </Swiper>
   );
 }

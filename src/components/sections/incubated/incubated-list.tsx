@@ -108,9 +108,14 @@ export default function IncubatedList() {
           />
         </SwiperSlide>
       ))}
-
-      <button className="swiper-button-next " onClick={onPauseVideo}></button>
-      <button className="swiper-button-prev " onClick={onPauseVideo}></button>
+      <button
+        className="swiper-button-next button-incubated-next"
+        onClick={onPauseVideo}
+      ></button>
+      <button
+        className="swiper-button-prev button-incubated-prev"
+        onClick={onPauseVideo}
+      ></button>
       <div className="swiper-pagination lg:hidden"></div>
     </Swiper>
   );

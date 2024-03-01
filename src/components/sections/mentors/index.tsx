@@ -23,6 +23,7 @@ export default function Mentors() {
           visible: { opacity: 1, y: 0 },
         }}
         transition={{ delay: 0.4, duration: 0.6 }}
+        className="h-52"
       >
         <MentorsList onDescription={onDescription} />
       </motion.section>

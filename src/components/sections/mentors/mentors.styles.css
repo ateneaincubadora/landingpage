@@ -1,3 +1,25 @@
+.button-mentors-next {
+  right: var(--swiper-navigation-sides-offset, 29.5rem) !important;
+  background-color: rgb(36 75 84 / 0.45);
+  padding: 1.9rem;
+  border-radius: 9999px;
+}
+
+.button-mentors-prev {
+  left: var(--swiper-navigation-sides-offset, 29.5rem) !important;
+  background-color: rgb(36 75 84 / 0.45);
+  padding: 1.9rem;
+  border-radius: 9999px;
+}
+
+.swiper-pagination {
+  bottom: var(--swiper-pagination-bottom, -4px) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #262626 !important;
+}
+
 .swiper-slide .swiper-image-mentor {
   width: 170px !important;
   height: 170px;

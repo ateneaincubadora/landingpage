@@ -3,6 +3,16 @@
   color: white !important;
 }
 
+.button-incubated-next {
+  right: var(--swiper-navigation-sides-offset, 10px) !important;
+  padding: 0;
+}
+
+.button-incubated-prev {
+  left: var(--swiper-navigation-sides-offset, 10px) !important;
+  padding: 0;
+}
+
 .swiper-slide .swiper-image {
   display: block;
   width: 350px;
@@ -18,5 +28,15 @@
     height: 400px;
     border-radius: 20px;
     overflow: hidden;
+  }
+
+  .button-incubated-next {
+    right: var(--swiper-navigation-sides-offset, 12.8rem) !important;
+    padding: 1.5rem;
+  }
+
+  .button-incubated-prev {
+    left: var(--swiper-navigation-sides-offset, 12.8rem) !important;
+    padding: 1.5rem;
   }
 }
