@@ -38,7 +38,7 @@ export default function Footer() {
             ))}
           </ul>
         </div>
-        <nav className="mt-3.5 grid grid-cols-2 gap-x-8">
+        <nav className="mt-3.5 grid grid-cols-2 place-items-center gap-x-8 lg:place-items-start">
           {navItems.map((nav) => (
             <LinkScroll
               duration={500}

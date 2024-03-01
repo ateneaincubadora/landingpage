@@ -39,7 +39,7 @@ export default function Header() {
 
   return (
     <header
-      className={`${background} fixed left-0  z-50 w-full overflow-y-hidden transition-all duration-500 ease-in-out lg:px-28 ${
+      className={`${background} fixed left-0  z-50 w-full overflow-y-hidden px-6 transition-all duration-500 ease-in-out lg:px-28 ${
         visible || mouseOverHeader ? "opacity-100" : "opacity-0"
       }`}
       onMouseEnter={handleMouseEnter}
