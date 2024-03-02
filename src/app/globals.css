@@ -60,3 +60,24 @@ body {
 .swiper-container-3d .swiper-slide-shadow-right {
   background-image: none;
 }
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: theme("colors.secondary");
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background-image);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--background-image);
+}
