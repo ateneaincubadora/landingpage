@@ -24,8 +24,6 @@
 @media (min-width: 1024px) {
   .swiper-slide .swiper-image {
     display: block;
-    width: 350px;
-    height: 400px;
     border-radius: 20px;
     overflow: hidden;
   }

@@ -23,7 +23,7 @@ const cards = [
 
 export default function MembersList() {
   return (
-    <section className="grid grid-cols-1 gap-6 lg:grid-cols-3 lg:pb-2.5">
+    <section className=" mb-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
       {cards.map((card) => (
         <Card key={card.id} card={card} />
       ))}

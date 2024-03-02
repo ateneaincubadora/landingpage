@@ -21,21 +21,23 @@ export default function Card({ card }: CardProps) {
         visible: { opacity: 1, y: 0 },
       }}
       transition={{ delay: 0.4 * card.id, duration: 0.6 }}
-      className="z-30 mx-auto flex max-w-[215px]  flex-col rounded-3xl bg-grayish-light shadow-xl"
+      className="z-30 mx-auto flex max-w-[200px]  flex-col rounded-3xl bg-grayish-light shadow-xl"
     >
-      <header className="relative h-36 w-full rounded-tl-3xl rounded-tr-3xl lg:h-44">
+      <header className="relative  w-full rounded-tl-3xl rounded-tr-3xl ">
         <img
           src={card.image}
           alt="Image"
-          className="h-56 w-full rounded-tl-3xl rounded-tr-3xl object-cover"
+          className="aspect-square h-44 w-full rounded-tl-3xl rounded-tr-3xl object-cover"
         />
+        <div className="absolute bottom-0 left-0 flex w-full items-center gap-2  bg-secondary px-3 py-1 shadow-xl">
+          <h5 className=" font-semibold text-white">{card.rol}</h5>
+        </div>
       </header>
-      <div className="z-10 mt-4 flex w-full items-center gap-2  bg-secondary px-3 py-1 shadow-xl">
-        <h5 className=" font-semibold text-white">{card.rol}</h5>
-      </div>
-      <div className="flex flex-col gap-1 px-6 py-4">
-        <h3 className="text-lg font-semibold text-grayish-dark">{card.name}</h3>
-        <p className="text-gray-500">Lorem ipsum dolor sit amet consectetur</p>
+      <div className="flex flex-col gap-0.5 px-6 py-2.5">
+        <h3 className=" font-semibold text-grayish-dark">{card.name}</h3>
+        <p className="text-sm text-gray-500">
+          Lorem ipsum dolor sit amet consectetur
+        </p>
       </div>
     </motion.article>
   );

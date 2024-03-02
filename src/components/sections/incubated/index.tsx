@@ -10,7 +10,7 @@ export default function Incubated() {
   return (
     <section
       id="incubated"
-      className="flex h-full w-full flex-col items-center justify-center gap-y-4 bg-grayish-light bg-incubated-background bg-cover bg-center bg-no-repeat px-6 pb-12 pt-[6.125rem] lg:min-h-screen lg:px-0 lg:pb-6 lg:pt-36 "
+      className="flex h-full w-full flex-col items-center justify-start gap-y-4 bg-grayish-light bg-incubated-background bg-cover bg-center  bg-no-repeat px-6 pb-12 pt-[6.125rem] lg:min-h-screen lg:px-0 lg:pb-8 lg:pt-28 "
     >
       <motion.section
         {...configMotion}
@@ -19,7 +19,6 @@ export default function Incubated() {
           visible: { opacity: 1, y: 0 },
         }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="w-auto"
       >
         <IncubatedList />
       </motion.section>

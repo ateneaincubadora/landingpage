@@ -26,12 +26,13 @@ export default function IncubatedList() {
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(1);
 
   const onTogglePlayPause = (cardId: number) => {
+    if (cardId - 1 !== activeSlideIndex) return;
+
     if (currentPlayingCardId === cardId) {
       const currentPlayingVideo = document.getElementById(
         `video-${currentPlayingCardId}`,
       ) as HTMLVideoElement;
       currentPlayingVideo.pause();
-      setCurrentPlayingCardId(null);
       return;
     }
 
@@ -80,13 +81,13 @@ export default function IncubatedList() {
       modules={[EffectCoverflow, Navigation, Pagination]}
       coverflowEffect={{
         rotate: 0,
-        stretch: 10,
-        depth: 100,
+        stretch: 0,
+        depth: 80,
         modifier: 3,
         slideShadows: true,
       }}
       initialSlide={1}
-      className="w-auto overflow-hidden lg:w-full"
+      className="w-auto overflow-hidden  lg:w-full"
       navigation={{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
