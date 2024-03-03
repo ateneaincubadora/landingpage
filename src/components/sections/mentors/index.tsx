@@ -23,7 +23,7 @@ export default function Mentors() {
           visible: { opacity: 1, y: 0 },
         }}
         transition={{ delay: 0.4, duration: 0.6 }}
-        className="h-52"
+        className="h-56"
       >
         <MentorsList onDescription={onDescription} />
       </motion.section>
@@ -34,7 +34,7 @@ export default function Mentors() {
           visible: { opacity: 1, y: 0 },
         }}
         transition={{ delay: 0.4, duration: 0.4 }}
-        className=" w-auto  text-center text-xl md:min-w-[36rem]"
+        className="w-auto text-center text-xl opacity-90 md:min-w-[36rem]"
       >
         {description}
       </motion.p>

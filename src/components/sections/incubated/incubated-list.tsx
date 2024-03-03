@@ -9,16 +9,6 @@ import "./incubated-list.css";
 
 import IncubatedCard from "./incubated-card";
 
-const breakpoints = {
-  320: {
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-  },
-  768: {
-    slidesPerView: 3,
-  },
-};
-
 export default function IncubatedList() {
   const [currentPlayingCardId, setCurrentPlayingCardId] = useState<
     number | null
@@ -73,21 +63,18 @@ export default function IncubatedList() {
       onSlideChange={(swiper: any) => {
         setActiveSlideIndex(swiper.realIndex);
       }}
-      breakpoints={breakpoints}
       effect={"coverflow"}
-      grabCursor={true}
+      grabCursor={false}
       centeredSlides={true}
       slidesPerView={"auto"}
       modules={[EffectCoverflow, Navigation, Pagination]}
       coverflowEffect={{
         rotate: 0,
-        stretch: 0,
         depth: 80,
-        modifier: 3,
-        slideShadows: true,
+        modifier: 2,
       }}
       initialSlide={1}
-      className="w-auto overflow-hidden  lg:w-full"
+      className="w-[49.3vw] rounded-xl"
       navigation={{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -98,6 +85,7 @@ export default function IncubatedList() {
         clickable: true,
       }}
       speed={700}
+      loop={true}
     >
       {incubatedCards.map((card, index) => (
         <SwiperSlide key={card.id} className="px-4 lg:px-0 ">

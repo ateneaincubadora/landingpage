@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 import "swiper/css/effect-coverflow";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://atenea-landig-page.vercel.app"),
+  metadataBase: new URL("http://www.ateneaincubadora.com"),
   title: "Atenea - Incubadora",
   description: "Atenea incubadora.",
   openGraph: {

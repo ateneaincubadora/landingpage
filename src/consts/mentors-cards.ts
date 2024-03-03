@@ -1,37 +1,77 @@
 export const mentorsCards = [
   {
     id: 1,
-    logo: "https://cdn.autobild.es/sites/navi.axelspringer.es/public/media/image/2020/04/marcas-coches-han-cambiado-logo-coronavirus-1913355.jpg",
-    description: "Nombre logo #1",
+    logo: "/assets/logos/arcor-logo.webp",
+    description: "Grupo Arcor",
   },
   {
     id: 2,
-    logo: "https://static-cse.canva.com/blob/951773/0750logotiposqueteinspiraran.jpg",
-    description: "Nombre logo #2",
+    logo: "/assets/logos/crowdium-crowdfunding-logo.webp",
+    description: "Crowdium crowdfunding de inversiones",
   },
   {
     id: 3,
-    logo: "https://1.bp.blogspot.com/-5e_wdCZ5_Cw/YLz-j47rDjI/AAAAAAAAerE/W37QFr1lS9k9G3ZORKvrLyyzz9reQZ0FACLcBGAsYHQ/s1402/Captura%2Bde%2Bpantalla%2B2021-06-06%2Ba%2Blas%2B18.57.25.png",
-    description: "Nombre logo #3",
+    logo: "/assets/logos/crowdium-logo.webp",
+    description: "Crowdium crowdfunding",
   },
   {
     id: 4,
-    logo: "https://img.buzzfeed.com/buzzfeed-static/static/2017-02/7/11/enhanced/buzzfeed-prod-web-13/enhanced-12584-1486485725-1.jpg?output-format=jpg&output-quality=auto",
-    description: "Nombre logo #4",
+    logo: "/assets/logos/daser-agro-logo.webp",
+    description: "Daser Agro",
   },
   {
     id: 5,
-    logo: "https://img.local.mx/2018/06/destacada-escudo.jpg",
-    description: "Nombre logo #5",
+    logo: "/assets/logos/deep-agro-logo.webp",
+    description: "Deep Agro",
   },
   {
     id: 6,
-    logo: "https://www.shutterstock.com/image-vector/letter-d-logo-icon-design-260nw-2408234187.jpg",
-    description: "Nombre logo #6",
+    logo: "/assets/logos/despegar-logo.webp",
+    description: "Despegar",
   },
   {
     id: 7,
-    logo: "https://img.freepik.com/vector-premium/logotipo-letra-k_668920-52.jpg",
-    description: "Nombre logo #7",
+    logo: "/assets/logos/deulel-logo.webp",
+    description: "Deulel",
+  },
+  {
+    id: 9,
+    logo: "/assets/logos/endeavor-logo.webp",
+    description: "Endeavor",
+  },
+  {
+    id: 10,
+    logo: "/assets/logos/instituto-active-learning-logo.webp",
+    description: "Instituto Active Learning",
+  },
+  {
+    id: 11,
+    logo: "/assets/logos/la-reina-logo.webp",
+    description: "La Reina",
+  },
+  {
+    id: 12,
+    logo: "/assets/logos/logos-logo.webp",
+    description: "Logos",
+  },
+  {
+    id: 13,
+    logo: "/assets/logos/n-logo.webp",
+    description: "N Logo",
+  },
+  {
+    id: 14,
+    logo: "/assets/logos/neural-soft-logo.webp",
+    description: "Neural Soft",
+  },
+  {
+    id: 15,
+    logo: "/assets/logos/ruralco-logo.webp",
+    description: "Ruralco",
+  },
+  {
+    id: 16,
+    logo: "/assets/logos/zafirus-logo.webp",
+    description: "Zafirus",
   },
 ];

@@ -29,12 +29,12 @@
   }
 
   .button-incubated-next {
-    right: var(--swiper-navigation-sides-offset, 12.8rem) !important;
+    right: var(--swiper-navigation-sides-offset, 10rem) !important;
     padding: 1.5rem;
   }
 
   .button-incubated-prev {
-    left: var(--swiper-navigation-sides-offset, 12.8rem) !important;
+    left: var(--swiper-navigation-sides-offset, 10rem) !important;
     padding: 1.5rem;
   }
 }

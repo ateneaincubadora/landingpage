@@ -32,6 +32,8 @@ export default function Ehance() {
           >
             <img
               src="/assets/video-test.webp"
+              width={333}
+              height="auto"
               alt="Imagen representando un video"
               className="h-[28rem] w-full object-cover  lg:h-[calc(100vh-64px)] lg:w-full"
             />

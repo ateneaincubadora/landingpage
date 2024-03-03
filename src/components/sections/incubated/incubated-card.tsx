@@ -29,13 +29,13 @@ export default function IncubatedCard({
     <div className="group relative">
       <video
         id={`video-${card.id}`}
-        width="250"
-        height="250"
-        className=" mx-auto h-full w-[80vw] rounded-2xl lg:w-[260px] "
+        width="300"
+        height="300"
+        className=" mx-auto  h-full w-[80vw] rounded-2xl lg:h-[450px] lg:w-full dt:h-[470px]"
         controlsList="nodownload"
         onClick={onTogglePlayPause}
       >
-        <source src={card.video} type="video/webm" className="rounded-2xl" />
+        <source src={card.video} type="video/webm" />
         Your browser does not support the video tag.
       </video>
       {isActive && (

@@ -12,7 +12,7 @@ const breakpoints = {
     slidesPerView: 3,
   },
   768: {
-    slidesPerView: 7,
+    slidesPerView: 15,
   },
 };
 
@@ -34,16 +34,14 @@ export default function MentorsList({ onDescription }: MentorsListProps) {
       ref={swiperRef}
       effect={"coverflow"}
       onSlideChange={handleSlideChange}
-      breakpoints={breakpoints}
       centeredSlides={true}
       slidesPerView={"auto"}
       coverflowEffect={{
-        rotate: 6,
+        rotate: 0,
         depth: 300,
-        modifier: 1,
+        modifier: 0,
         slideShadows: false,
       }}
-      initialSlide={4}
       loop={true}
       modules={[Pagination, EffectCoverflow, Navigation]}
       navigation={{
@@ -55,23 +53,22 @@ export default function MentorsList({ onDescription }: MentorsListProps) {
         el: ".swiper-pagination",
         clickable: true,
       }}
-      className="mx-auto h-full w-[100vw] overflow-hidden lg:w-auto"
+      className="slider-mentors mx-auto h-full w-[100vw] overflow-hidden lg:w-auto"
       speed={500}
     >
       {mentorsCards.map((mentor) => (
-        <SwiperSlide key={mentor.id}>
+        <SwiperSlide key={mentor.id} className="slide-mentors">
           <img
             src={mentor.logo}
             alt="mentors"
             loading="lazy"
-            className=" swiper-image-mentor rounded-full object-cover"
+            className=" swiper-image-mentor aspect-square rounded-full object-contain"
           />
         </SwiperSlide>
       ))}
 
-      <div className="mentors-pagination">
-        <div className="swiper-pagination"></div>
-      </div>
+      <div className="swiper-pagination"></div>
+
       <button className="swiper-button-next button-mentors-next"></button>
       <button className="swiper-button-prev button-mentors-prev"></button>
     </Swiper>

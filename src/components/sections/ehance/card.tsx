@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 interface CardI {
   id: number;
   name: string;
+  lastName: string;
   rol: string;
   image: string;
 }
@@ -29,15 +30,20 @@ export default function Card({ card }: CardProps) {
           alt="Image"
           className="aspect-square h-44 w-full rounded-tl-3xl rounded-tr-3xl object-cover"
         />
-        <div className="absolute bottom-0 left-0 flex w-full items-center gap-2  bg-secondary px-3 py-1 shadow-xl">
-          <h5 className=" font-semibold text-white">{card.rol}</h5>
+        <div className="absolute bottom-0 left-0 flex w-full items-center gap-2  bg-secondary px-3 py-1 shadow-2xl">
+          <h5 className=" font-semibold text-white">
+            ROL : <span className="text-gray-100">{card.rol}</span>
+          </h5>
         </div>
       </header>
-      <div className="flex flex-col gap-0.5 px-6 py-2.5">
-        <h3 className=" font-semibold text-grayish-dark">{card.name}</h3>
-        <p className="text-sm text-gray-500">
-          Lorem ipsum dolor sit amet consectetur
-        </p>
+      <div className="flex flex-col gap-0.5 px-3 py-2.5">
+        <h3 className="  font-semibold text-gray-700">
+          {" "}
+          Nombre : <span className="  text-gray-600">{card.name}</span>
+        </h3>
+        <h3 className=" font-semibold text-gray-700">
+          Apellido : <span className="  text-gray-600">{card.lastName}</span>
+        </h3>
       </div>
     </motion.article>
   );

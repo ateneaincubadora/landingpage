@@ -30,6 +30,8 @@ const socialItems = [
   },
 ];
 
+const URL_CALENDLY = "https://calendly.com/atenea-incubadora/30min";
+
 export default function Contact() {
   return (
     <section
@@ -57,12 +59,12 @@ export default function Contact() {
               visible: { opacity: 1, x: 0 },
             }}
             transition={{ delay: 0.4, duration: 0.5 }}
-            className="h-80 w-auto overflow-y-scroll rounded-xl  lg:w-[28rem] lg:pr-2 "
+            className="h-96 w-auto overflow-y-scroll rounded-xl  lg:w-[28rem] lg:pr-1 "
           >
             <div
               className="calendly-inline-widget"
-              data-url="https://calendly.com/matias-d-/reunion-de-30-minutos-clon?hide_event_type_details=1&hide_gdpr_banner=1"
-              style={{ minWidth: "320px", height: "600px" }}
+              data-url={`${URL_CALENDLY}?hide_gdpr_banner=1`}
+              style={{ minWidth: "320px", height: "384px" }}
             ></div>
           </motion.div>
         </section>
