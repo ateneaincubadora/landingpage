@@ -32,10 +32,13 @@
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
   width: auto !important;
 }
+
+.swiper-slide img {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
 .slide-mentors {
   filter: blur(1px);
-
-  border: 4px none solid;
   border-radius: 9999px;
 }
 
@@ -44,7 +47,7 @@
 }
 
 .swiper-slide-active img {
-  border: 3px theme(colors.secondary) solid;
+  border: 3px rgb(151, 130, 130) solid;
 }
 
 @media (min-width: 1024px) {
