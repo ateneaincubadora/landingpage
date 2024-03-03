@@ -1,6 +1,11 @@
 "use client";
 
-import { Pagination, EffectCoverflow, Navigation } from "swiper/modules";
+import {
+  Pagination,
+  EffectCoverflow,
+  Navigation,
+  Autoplay,
+} from "swiper/modules";
 import { mentorsCards } from "@/consts/mentors-cards";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -35,6 +40,10 @@ export default function MentorsList({ onDescription }: MentorsListProps) {
       effect={"coverflow"}
       onSlideChange={handleSlideChange}
       centeredSlides={true}
+      autoplay={{
+        delay: 5000,
+        disableOnInteraction: false,
+      }}
       slidesPerView={"auto"}
       coverflowEffect={{
         rotate: 0,
@@ -43,7 +52,7 @@ export default function MentorsList({ onDescription }: MentorsListProps) {
         slideShadows: false,
       }}
       loop={true}
-      modules={[Pagination, EffectCoverflow, Navigation]}
+      modules={[Pagination, EffectCoverflow, Navigation, Autoplay]}
       navigation={{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

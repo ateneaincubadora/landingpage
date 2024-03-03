@@ -1,13 +1,17 @@
 .button-mentors-next {
   right: var(--swiper-navigation-sides-offset, 30.5rem) !important;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(0.7);
   padding: 1.9rem;
   border-radius: 9999px;
 }
 
 .button-mentors-prev {
   left: var(--swiper-navigation-sides-offset, 30.5rem) !important;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(0.7);
   padding: 1.9rem;
   border-radius: 9999px;
 }
@@ -30,11 +34,13 @@
   background-position: center;
   background-size: cover;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2);
+
   width: auto !important;
 }
 
 .swiper-slide img {
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(0.8);
 }
 
 .slide-mentors {
@@ -47,7 +53,8 @@
 }
 
 .swiper-slide-active img {
-  border: 3px rgb(151, 130, 130) solid;
+  transform: scale(1);
+  transition: transform 0.4s ease-in-out;
 }
 
 @media (min-width: 1024px) {

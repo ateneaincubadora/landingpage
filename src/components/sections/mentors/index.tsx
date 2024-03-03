@@ -14,7 +14,7 @@ export default function Mentors() {
   return (
     <section
       id="mentors"
-      className="flex h-auto w-full flex-col items-center justify-center gap-y-8 bg-grayish-light px-6 py-20 pt-32 lg:h-screen lg:px-0 lg:py-0"
+      className="flex  h-auto w-full flex-col items-center justify-center gap-y-8 bg-grayish-light px-6 py-20 pt-32 lg:h-screen lg:px-0 lg:py-0"
     >
       <motion.section
         {...configMotion}
