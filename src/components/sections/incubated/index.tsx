@@ -2,11 +2,16 @@
 
 import { configMotion } from "@/utils/config-motion";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 import IncubatedList from "./incubated-list";
 import Box from "@/components/ui/box";
 
 export default function Incubated() {
+  const [description, setDescription] = useState("");
+
+  const onDescription = (desc: string) => setDescription(desc);
+
   return (
     <section
       id="incubated"
@@ -20,7 +25,7 @@ export default function Incubated() {
         }}
         transition={{ delay: 0.4, duration: 0.6 }}
       >
-        <IncubatedList />
+        <IncubatedList onDescription={onDescription} />
       </motion.section>
 
       <motion.div
@@ -31,10 +36,8 @@ export default function Incubated() {
         }}
         transition={{ delay: 0.4, duration: 0.4 }}
       >
-        <Box className="w-full text-sm text-gray-500 md:w-96">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo
-          repellendus provident vero earum mollitia dolores. Eius, asperiores
-          similique. Quisquam aliquid debitis.
+        <Box className="flex min-h-16 w-full items-center justify-center  py-2 text-center text-sm text-gray-500 md:w-[22rem] ">
+          {description}
         </Box>
       </motion.div>
     </section>

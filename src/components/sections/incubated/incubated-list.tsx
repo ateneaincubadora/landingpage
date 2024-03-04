@@ -9,7 +9,11 @@ import "./incubated-list.css";
 
 import IncubatedCard from "./incubated-card";
 
-export default function IncubatedList() {
+interface IncubatedListProps {
+  onDescription: (desc: string) => void;
+}
+
+export default function IncubatedList({ onDescription }: IncubatedListProps) {
   const [currentPlayingCardId, setCurrentPlayingCardId] = useState<
     number | null
   >(null);
@@ -58,11 +62,16 @@ export default function IncubatedList() {
     }
   };
 
+  const handleSlideChange = (swiper: any) => {
+    const realIndex = swiper.realIndex;
+    setActiveSlideIndex(realIndex);
+    const activeIncubated = incubatedCards[realIndex];
+    onDescription(activeIncubated.description);
+  };
+
   return (
     <Swiper
-      onSlideChange={(swiper: any) => {
-        setActiveSlideIndex(swiper.realIndex);
-      }}
+      onSlideChange={handleSlideChange}
       effect={"coverflow"}
       grabCursor={false}
       centeredSlides={true}
