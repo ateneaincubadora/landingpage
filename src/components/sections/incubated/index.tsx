@@ -36,7 +36,7 @@ export default function Incubated() {
         }}
         transition={{ delay: 0.4, duration: 0.4 }}
       >
-        <Box className="flex min-h-16 w-full items-center justify-center  py-2 text-center text-sm text-gray-500 md:w-[22rem] ">
+        <Box className="flex min-h-20 w-80 items-center  justify-center py-2  text-center text-sm text-gray-500 md:w-[22rem] lg:min-h-16 ">
           {description}
         </Box>
       </motion.div>

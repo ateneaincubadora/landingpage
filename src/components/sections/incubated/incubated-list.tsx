@@ -83,7 +83,7 @@ export default function IncubatedList({ onDescription }: IncubatedListProps) {
         modifier: 2,
       }}
       initialSlide={1}
-      className="w-[49.3vw] rounded-xl"
+      className="w-[68vw]  rounded-xl lg:w-[49.3vw]"
       navigation={{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -97,7 +97,7 @@ export default function IncubatedList({ onDescription }: IncubatedListProps) {
       loop={true}
     >
       {incubatedCards.map((card, index) => (
-        <SwiperSlide key={card.id} className="px-4 lg:px-0 ">
+        <SwiperSlide key={card.id} className=" ">
           <IncubatedCard
             card={card}
             isPlaying={currentPlayingCardId === card.id}

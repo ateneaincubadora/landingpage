@@ -31,7 +31,7 @@ export default function IncubatedCard({
         id={`video-${card.id}`}
         width="300"
         height="300"
-        className=" mx-auto  h-full w-[80vw] rounded-2xl lg:h-[450px] lg:w-full dt:h-[470px]"
+        className=" mx-auto  h-[410px] w-[80vw] rounded-2xl lg:h-[450px] lg:w-full  dt:h-[470px]"
         controlsList="nodownload"
         onClick={onTogglePlayPause}
       >
