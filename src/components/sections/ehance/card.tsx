@@ -31,9 +31,7 @@ export default function Card({ card }: CardProps) {
           className="aspect-square h-48 w-full rounded-tl-3xl rounded-tr-3xl object-contain"
         />
         <div className="absolute bottom-0 left-0 flex w-full items-center gap-2  bg-secondary px-3 py-1 shadow-2xl">
-          <h5 className=" font-semibold text-white">
-            ROL : <span className="text-gray-100">{card.rol}</span>
-          </h5>
+          <h5 className=" font-semibold text-white">{card.rol}</h5>
         </div>
       </header>
       <div className="flex flex-col gap-0.5 px-3 py-2.5">

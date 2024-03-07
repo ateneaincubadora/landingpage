@@ -5,7 +5,7 @@ export const menuSocials = [
   {
     id: 1,
     icon: IconMail,
-    to: "#",
+    to: "mailto:atenea.incubadora@gmail.com?subject=Contacto%40Desde%20La%20Web&body=Hola!%20me%20interesaria%20trabajar%20con%20ustedes.",
   },
   {
     id: 2,
@@ -15,6 +15,6 @@ export const menuSocials = [
   {
     id: 3,
     icon: IconPhone,
-    to: "#",
+    to: "https://api.whatsapp.com/send?phone=5493462330972",
   },
 ];

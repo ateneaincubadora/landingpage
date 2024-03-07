@@ -15,12 +15,12 @@ import React from "react";
 const socialItems = [
   {
     id: 1,
-    description: "+549-3413626491",
+    description: "+54 9 3462 33-0972",
     icon: IconPhone,
   },
   {
     id: 2,
-    description: "Lorem impsum dolor sit",
+    description: "atenea.incubadora@gmail.com",
     icon: IconMail,
   },
   {

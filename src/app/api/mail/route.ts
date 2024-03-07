@@ -17,7 +17,7 @@ export async function POST(request: NextRequest) {
   try {
     await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "matiasc.02.2003@gmail.com",
+      to: "atenea.incubadora@gmail.com",
       subject: `Mensaje desde web - ${name} - ${mail}`,
       html: `<p>${message}</p>`,
     });

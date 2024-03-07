@@ -41,7 +41,7 @@ export default function MentorsList({ onDescription }: MentorsListProps) {
       onSlideChange={handleSlideChange}
       centeredSlides={true}
       autoplay={{
-        delay: 5000,
+        delay: 2800,
         disableOnInteraction: false,
       }}
       slidesPerView={"auto"}
@@ -63,7 +63,7 @@ export default function MentorsList({ onDescription }: MentorsListProps) {
         clickable: true,
       }}
       className="slider-mentors mx-auto h-full w-[100vw] overflow-hidden lg:w-auto"
-      speed={500}
+      speed={700}
     >
       {mentorsCards.map((mentor) => (
         <SwiperSlide key={mentor.id} className="slide-mentors">
