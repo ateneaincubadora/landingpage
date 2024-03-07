@@ -17,7 +17,7 @@ export default function Ehance() {
         height={600}
         width={600}
         alt="Rectangulo vectorizado"
-        className=" pointer-events-none  absolute right-0 hidden h-screen w-auto object-contain lg:block"
+        className="   absolute right-0 top-0 hidden h-screen w-auto object-contain lg:block"
       />
       <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-end lg:gap-4 ">
         <section className="relative  z-20">
