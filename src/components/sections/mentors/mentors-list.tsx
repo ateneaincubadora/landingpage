@@ -41,7 +41,7 @@ export default function MentorsList({ onDescription }: MentorsListProps) {
       onSlideChange={handleSlideChange}
       centeredSlides={true}
       autoplay={{
-        delay: 2800,
+        delay: 2500,
         disableOnInteraction: false,
       }}
       slidesPerView={"auto"}
