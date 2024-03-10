@@ -32,7 +32,7 @@ export default function Menu({ className }: MenuProps) {
       {navItems.map((nav) => (
         <li
           key={nav.id}
-          className={`group relative cursor-pointer rounded-lg px-2 text-2xl text-gray-200 transition-colors hover:bg-gray-300/30 hover:text-white lg:text-lg ${activeLink === nav.to && "font-helvetica-bold text-white"}`}
+          className={`group relative cursor-pointer rounded-lg px-2 text-2xl uppercase text-gray-200 transition-colors hover:bg-gray-300/30 hover:text-white lg:text-lg ${activeLink === nav.to && "font-helvetica-bold  text-white"}`}
         >
           <Link
             spy={true}

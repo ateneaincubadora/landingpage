@@ -47,7 +47,7 @@ export default function Footer() {
               spy={true}
               offset={0}
               to={nav.to}
-              className="cursor-pointer text-gray-200 hover:underline"
+              className="cursor-pointer uppercase text-gray-200 hover:underline"
             >
               {nav.label}
             </LinkScroll>

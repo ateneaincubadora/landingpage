@@ -83,7 +83,7 @@ export default function IncubatedList({ onDescription }: IncubatedListProps) {
         modifier: 2,
       }}
       initialSlide={1}
-      className="w-auto  rounded-xl lg:w-[41.6rem]"
+      className="w-auto  rounded-xl lg:w-[41.6rem] dt:w-[43.7rem]"
       navigation={{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
