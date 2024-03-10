@@ -3,6 +3,7 @@
 import { configMotion } from "@/utils/config-motion";
 import { motion } from "framer-motion";
 
+import MembersListMobile from "./members-list-mobile";
 import Title from "@/components/ui/title";
 import MembersList from "./members-list";
 
@@ -58,6 +59,7 @@ export default function Ehance() {
         </section>
 
         <MembersList />
+        <MembersListMobile />
       </div>
     </section>
   );

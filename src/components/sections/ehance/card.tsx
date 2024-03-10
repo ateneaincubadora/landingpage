@@ -22,7 +22,7 @@ export default function Card({ card }: CardProps) {
         visible: { opacity: 1, y: 0 },
       }}
       transition={{ delay: 0.4 * card.id, duration: 0.6 }}
-      className="z-30 mx-auto flex max-w-[200px]  flex-col rounded-3xl bg-grayish-light shadow-xl"
+      className="z-30 mx-auto flex w-56 flex-col  rounded-3xl bg-grayish-light shadow-xl lg:max-w-[200px]"
     >
       <header className="relative  w-full rounded-tl-3xl rounded-tr-3xl ">
         <img
