@@ -11,12 +11,6 @@ export default function MembersListMobile() {
         spaceBetween={20}
         centeredSlides={true}
         slidesPerView={"auto"}
-        breakpoins={{
-          320: {
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-          },
-        }}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

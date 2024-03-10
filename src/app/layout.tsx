@@ -15,7 +15,7 @@ import "swiper/css/effect-coverflow";
 export const metadata: Metadata = {
   metadataBase: new URL("http://www.ateneaincubadora.com"),
   title: "Atenea - Incubadora",
-  description: "Atenea incubadora.",
+  description: "Emprender con el foco bien puesto con Atenea",
   openGraph: {
     images: "/assets/opengraph-image.png",
     siteName: "Atenea",
