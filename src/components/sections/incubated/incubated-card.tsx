@@ -26,12 +26,12 @@ export default function IncubatedCard({
   };
 
   return (
-    <div className="group relative">
+    <div className="group relative ">
       <video
         id={`video-${card.id}`}
         width="300"
         height="300"
-        className=" mx-auto  h-[410px] w-[80vw] rounded-2xl lg:h-[450px] lg:w-full  dt:h-[470px]"
+        className=" mx-auto  h-[400px] w-auto rounded-2xl lg:h-[450px] lg:w-full  dt:h-[470px]"
         controlsList="nodownload"
         onClick={onTogglePlayPause}
       >

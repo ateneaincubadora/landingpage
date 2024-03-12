@@ -34,7 +34,7 @@ export const incubatedCards = [
   {
     id: 7,
     video: "/assets/videos/ciro-video.webm",
-    description: "Efficast: Más datos. Mejores decisiones.",
+    description: "Winforge: Encontrar el camino en los valores y el detalle.",
   },
   {
     id: 8,
