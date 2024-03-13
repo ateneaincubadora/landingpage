@@ -11,6 +11,7 @@ interface IncubatedCardProps {
   onTogglePlayPause: () => void;
   isPlaying: boolean;
   isActive: boolean;
+  index: number;
 }
 
 export default function IncubatedCard({
@@ -18,6 +19,7 @@ export default function IncubatedCard({
   onTogglePlayPause,
   isPlaying,
   isActive,
+  index,
 }: IncubatedCardProps) {
   const togglePlayPause = () => {
     if (isActive) {
@@ -28,7 +30,7 @@ export default function IncubatedCard({
   return (
     <div className="group relative ">
       <video
-        id={`video-${card.id}`}
+        id={`video-${index}`}
         width="300"
         height="300"
         className=" mx-auto  h-[400px] w-auto rounded-2xl lg:h-[450px] lg:w-full  dt:h-[470px]"

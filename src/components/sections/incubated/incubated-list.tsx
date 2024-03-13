@@ -19,34 +19,23 @@ export default function IncubatedList({ onDescription }: IncubatedListProps) {
   >(null);
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(1);
 
-  const onTogglePlayPause = (cardId: number) => {
-    if (cardId - 1 !== activeSlideIndex) return;
-
-    if (currentPlayingCardId === cardId) {
+  const onTogglePlayPause = (indexCard: number) => {
+    if (currentPlayingCardId === null) {
       const currentPlayingVideo = document.getElementById(
-        `video-${currentPlayingCardId}`,
+        `video-${indexCard}`,
       ) as HTMLVideoElement;
-      currentPlayingVideo.pause();
+      currentPlayingVideo.play();
+      setCurrentPlayingCardId(indexCard);
       return;
     }
 
-    if (currentPlayingCardId !== null) {
+    if (currentPlayingCardId === indexCard) {
       const currentPlayingVideo = document.getElementById(
-        `video-${currentPlayingCardId}`,
+        `video-${indexCard}`,
       ) as HTMLVideoElement;
-      if (currentPlayingVideo) {
-        currentPlayingVideo.pause();
-      }
-    }
-
-    const video = document.getElementById(
-      `video-${cardId}`,
-    ) as HTMLVideoElement;
-    if (video) {
-      if (video.paused) {
-        video.play();
-        setCurrentPlayingCardId(cardId);
-      }
+      currentPlayingVideo.pause();
+      setCurrentPlayingCardId(null);
+      return;
     }
   };
 
@@ -99,10 +88,11 @@ export default function IncubatedList({ onDescription }: IncubatedListProps) {
       {incubatedCards.map((card, index) => (
         <SwiperSlide key={card.id}>
           <IncubatedCard
+            index={index}
             card={card}
-            isPlaying={currentPlayingCardId === card.id}
+            isPlaying={currentPlayingCardId === index}
             isActive={index === activeSlideIndex}
-            onTogglePlayPause={() => onTogglePlayPause(card.id)}
+            onTogglePlayPause={() => onTogglePlayPause(index)}
           />
         </SwiperSlide>
       ))}
