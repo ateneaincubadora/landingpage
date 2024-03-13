@@ -20,7 +20,7 @@ export default function Ehance() {
         alt="Rectangulo vectorizado"
         className="   absolute right-0 top-0 hidden h-screen w-auto object-contain lg:block"
       />
-      <div className="flex flex-col items-center gap-2 lg:flex-row lg:items-end lg:gap-4 ">
+      <div className="flex flex-col items-center gap-2 lg:flex-row  lg:gap-4 ">
         <section className="relative  z-20">
           <motion.div
             {...configMotion}

@@ -3,7 +3,7 @@ import Card from "./card";
 
 export default function MembersList() {
   return (
-    <section className="mb-8 hidden grid-cols-1 gap-6 lg:grid lg:grid-cols-3">
+    <section className="hidden grid-cols-1 gap-6 pt-20 lg:grid lg:grid-cols-3">
       {membersCards.map((card) => (
         <Card key={card.id} card={card} />
       ))}
