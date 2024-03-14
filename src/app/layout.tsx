@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("http://www.ateneaincubadora.com"),
   title: "Atenea - Incubadora",
   icons : {
-    icon : '/favicon.ico'
+    icon : '/assets/favicon.ico'
   },
   description: "Emprender con el foco bien puesto con Atenea",
   openGraph: {

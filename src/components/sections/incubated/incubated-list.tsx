@@ -20,6 +20,8 @@ export default function IncubatedList({ onDescription }: IncubatedListProps) {
   const [activeSlideIndex, setActiveSlideIndex] = useState<number>(1);
 
   const onTogglePlayPause = (indexCard: number) => {
+    if (activeSlideIndex !== indexCard) return;
+
     if (currentPlayingCardId === null) {
       const currentPlayingVideo = document.getElementById(
         `video-${indexCard}`,
