@@ -36,7 +36,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="overflow-x-hideen relative flex  items-center justify-center overflow-hidden bg-grayish-light bg-contact-background bg-cover bg-center bg-no-repeat px-2 pb-6 pt-32 lg:min-h-screen  lg:bg-top lg:px-28 lg:pb-20 lg:pt-[7.6rem]"
+      className="overflow-x-hideen bg-contact-background-mobile relative flex items-center justify-center overflow-hidden bg-grayish-light bg-cover bg-top bg-no-repeat px-2 pb-6 pt-32 lg:min-h-screen lg:bg-contact-background  lg:bg-top lg:px-28 lg:pb-20 lg:pt-[7.6rem]"
     >
       <div className="grid w-full grid-cols-1 gap-6 lg:grid-cols-2  lg:gap-0">
         <section className="flex flex-1 flex-col gap-y-12 ">

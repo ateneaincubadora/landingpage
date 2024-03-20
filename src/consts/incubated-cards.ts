@@ -18,18 +18,18 @@ export const incubatedCards = [
   {
     id: 4,
     video: "/assets/videos/gianluca-chiaverano-video.webm",
-    description: "Zafirus: tecnología basada en valores.",
+    description: "Agfi: el agro al alcance de todos.",
   },
   {
     id: 5,
     video: "/assets/videos/hummit-video.webm",
-    description:
-      "Solvant: Triplicamos la cantidad de clientes optimizando el sistema de marketing y ventas.",
+    description: "Huumit: Conectando talento, cultivando progreso.",
   },
   {
     id: 6,
     video: "/assets/videos/ivan-video.webm",
-    description: "Efficast: Más datos. Mejores decisiones.",
+    description:
+      "NinjaLabs: escalá tu modelo de negocios con propósito y habilidades de alto valor.",
   },
   {
     id: 7,

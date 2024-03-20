@@ -18,11 +18,17 @@ const config: Config = {
         "grayish-light": "#f4f4f4",
       },
       backgroundImage: {
+        "intro-background-mobile":
+          "url(/assets/backgrounds/background-intro-mobile.webp)",
         "intro-background": "url(/assets/backgrounds/background-intro.webp)",
         "about-us-background":
           "url(/assets/backgrounds/background-about-us.webp)",
+        "incubated-background-mobile":
+          "url(/assets/backgrounds/background-incubated-mobile.webp)",
         "incubated-background":
           "url(/assets/backgrounds/background-incubated.webp)",
+        "contact-background-mobile":
+          "url(/assets/backgrounds/background-contact-mobile.webp)",
         "contact-background":
           "url(/assets/backgrounds/background-contact.webp)",
       },

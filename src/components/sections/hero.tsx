@@ -16,7 +16,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen  w-full items-center justify-start bg-intro-background bg-cover bg-right bg-no-repeat lg:px-28"
+      className="relative flex min-h-screen  w-full items-center justify-start bg-intro-background-mobile bg-cover bg-right bg-no-repeat lg:bg-intro-background lg:px-28"
     >
       <motion.h1
         {...configMotion}
