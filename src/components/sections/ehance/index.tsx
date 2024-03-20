@@ -11,7 +11,7 @@ export default function Ehance() {
   return (
     <section
       id="enhance"
-      className="relative flex h-auto w-full flex-col items-center justify-start overflow-hidden bg-grayish-light  px-6 pb-4 pt-[7rem] text-white md:flex-row lg:min-h-screen lg:px-28  lg:pb-7 lg:pt-[5rem]"
+      className="relative flex h-auto w-full flex-col items-center justify-start overflow-hidden bg-grayish-light  px-6 pb-8 pt-[7rem] text-white md:flex-row lg:min-h-screen lg:px-28  lg:pb-7 lg:pt-[5rem]"
     >
       <img
         src="/assets/vector-rectangle.webp"
@@ -20,7 +20,7 @@ export default function Ehance() {
         alt="Rectangulo vectorizado"
         className="   absolute right-0 top-0 hidden h-screen w-auto object-contain lg:block"
       />
-      <div className="flex flex-col items-center gap-2 lg:flex-row  lg:gap-4 ">
+      <div className="flex flex-col items-center  gap-4   lg:flex-row ">
         <section className="relative  z-20">
           <motion.div
             {...configMotion}

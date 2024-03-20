@@ -15,7 +15,7 @@ export default function Incubated() {
   return (
     <section
       id="incubated"
-      className="flex h-full w-full flex-col items-center justify-start gap-y-3 bg-grayish-light bg-incubated-background-mobile bg-cover bg-bottom bg-no-repeat  px-6 pb-20 pt-[6.125rem] lg:min-h-screen lg:bg-incubated-background lg:bg-top lg:px-0 lg:pb-36 "
+      className="flex h-auto w-full flex-col items-center justify-start gap-y-3 bg-grayish-light bg-incubated-background-mobile bg-cover bg-bottom bg-no-repeat  px-6 pb-20 pt-[6.125rem] lg:min-h-screen lg:bg-incubated-background lg:bg-top lg:px-0 lg:pb-36 "
     >
       <motion.section
         {...configMotion}
