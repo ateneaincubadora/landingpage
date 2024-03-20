@@ -21,6 +21,8 @@ const config: Config = {
         "intro-background-mobile":
           "url(/assets/backgrounds/background-intro-mobile.webp)",
         "intro-background": "url(/assets/backgrounds/background-intro.webp)",
+        "about-us-background-mobile":
+          "url(/assets/backgrounds/background-about-us-mobile.webp)",
         "about-us-background":
           "url(/assets/backgrounds/background-about-us.webp)",
         "incubated-background-mobile":

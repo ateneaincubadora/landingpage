@@ -11,7 +11,7 @@ export default function Ehance() {
   return (
     <section
       id="enhance"
-      className="relative flex h-auto w-full flex-col items-center justify-start overflow-hidden bg-grayish-light  px-6 pb-0 pt-[7rem] text-white md:flex-row lg:min-h-screen lg:px-28  lg:pb-7 lg:pt-[5rem]"
+      className="relative flex h-auto w-full flex-col items-center justify-start overflow-hidden bg-grayish-light  px-6 pb-4 pt-[7rem] text-white md:flex-row lg:min-h-screen lg:px-28  lg:pb-7 lg:pt-[5rem]"
     >
       <img
         src="/assets/vector-rectangle.webp"
