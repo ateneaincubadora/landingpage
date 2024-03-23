@@ -28,7 +28,13 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  robots: "index, follow",
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      "max-video-preview": -1,
+    },
+  },
   keywords: [
     "incubadora de negocios",
     "emprendimiento",
