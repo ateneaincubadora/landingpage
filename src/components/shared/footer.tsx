@@ -57,7 +57,7 @@ export default function Footer() {
       <hr className="my-6 border-white/10 sm:mx-auto lg:mb-6 lg:mt-3.5 " />
       <div className="flex items-center justify-center">
         <span className="text-center text-sm text-gray-400">
-          &copy; Atenea - Incubadora 2023 Todos los derechos reservados.
+          &copy; Atenea - Incubadora 2021 Todos los derechos reservados.
         </span>
       </div>
     </footer>

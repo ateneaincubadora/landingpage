@@ -19,7 +19,8 @@ export const metadata: Metadata = {
     icon: "/assets/favicon.ico",
   },
   referrer: "origin-when-cross-origin",
-  description: "Emprender con el foco bien puesto con Atenea",
+  description:
+    "Incubadora Atenea : Emprender con valores y el foco bien puesto - Ubicada en Rosario - Email: atenea.incubadora@gmail.com - Teléfono : +54 9 3462 33-0972",
   openGraph: {
     images: "/assets/opengraph-image.png",
     siteName: "Atenea",
