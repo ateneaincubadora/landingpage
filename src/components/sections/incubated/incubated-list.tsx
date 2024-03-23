@@ -1,7 +1,7 @@
 "use client";
 
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
-import { incubatedCards } from "@/consts/incubated-cards";
+import { incubatedCards, incubatedCardsMobile } from "@/consts/incubated-cards";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useState } from "react";
 
@@ -87,7 +87,7 @@ export default function IncubatedList({ onDescription }: IncubatedListProps) {
       speed={700}
       loop={true}
     >
-      {incubatedCards.map((card, index) => (
+      {incubatedCardsMobile.map((card, index) => (
         <SwiperSlide key={card.id}>
           <IncubatedCard
             index={index}

@@ -40,6 +40,7 @@ export const metadata: Metadata = {
     "desarrollo de negocios",
     "fomento empresarial",
   ],
+  publisher: "Atenea Incubadora",
   authors: [
     {
       name: "Atenea Incubadora",
