@@ -2,7 +2,7 @@ export const incubatedCards = [
   {
     id: 1,
     video: "/assets/videos/javi-video.webm",
-    description: "Atenea: Enprender con el foco bien puesto.",
+    description: "Atenea: Emprender con el foco bien puesto.",
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ export const incubatedCardsCloudinary = [
   {
     id: 1,
     video: `${URL_IMAGES}/v1711228803/atenea/javi-video_y2uio9.webm`,
-    description: "Atenea: Enprender con el foco bien puesto.",
+    description: "Atenea: Emprender con el foco bien puesto.",
   },
   {
     id: 2,
@@ -95,7 +95,7 @@ export const incubatedCardsMobile = [
     id: 1,
     image: "/assets/images/carousel/javi-image.webp",
     video: `${URL_IMAGES}/v1711228803/atenea/javi-video_y2uio9.webm`,
-    description: "Atenea: Enprender con el foco bien puesto.",
+    description: "Atenea: Emprender con el foco bien puesto.",
   },
   {
     id: 2,
