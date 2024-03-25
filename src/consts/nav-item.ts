@@ -1,7 +1,7 @@
 export const navItems = [
   {
     id: 1,
-    label: "Inico",
+    label: "Inicio",
     to: "hero",
   },
   {
