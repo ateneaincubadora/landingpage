@@ -6,6 +6,7 @@ import { useState } from "react";
 
 import IncubatedList from "./incubated-list";
 import Box from "@/components/ui/box";
+import IncubatedListMobile from "./incubated-list-mobile";
 
 export default function Incubated() {
   const [description, setDescription] = useState("");
@@ -25,7 +26,12 @@ export default function Incubated() {
         }}
         transition={{ delay: 0.4, duration: 0.6 }}
       >
-        <IncubatedList onDescription={onDescription} />
+        <div className="hidden lg:block">
+          <IncubatedList onDescription={onDescription} />
+        </div>
+        <div className="block lg:hidden">
+          <IncubatedListMobile onDescription={onDescription} />
+        </div>
       </motion.section>
 
       <motion.div

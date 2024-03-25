@@ -24,6 +24,8 @@ export const metadata: Metadata = {
   openGraph: {
     images: "/assets/opengraph-image.png",
     siteName: "Atenea",
+    description:
+      "Incubadora Atenea : Emprender con valores y el foco bien puesto",
   },
   alternates: {
     canonical: "/",

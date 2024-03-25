@@ -5,12 +5,19 @@
 
 .button-incubated-next {
   right: var(--swiper-navigation-sides-offset, 10px) !important;
-  padding: 0;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .button-incubated-prev {
   left: var(--swiper-navigation-sides-offset, 10px) !important;
-  padding: 0;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.swiper-3d .swiper-slide-shadow-right,
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: none !important;
 }
 
 .swiper-slide .swiper-image {
@@ -22,6 +29,16 @@
 }
 
 @media (min-width: 1024px) {
+  .swiper-3d .swiper-slide-shadow-right,
+  .swiper-3d .swiper-slide-shadow-left {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0)
+    ) !important;
+    border-radius: 20px;
+  }
+
   .swiper-slide .swiper-image {
     display: block;
     border-radius: 20px;
@@ -31,10 +48,12 @@
   .button-incubated-next {
     right: var(--swiper-navigation-sides-offset, 10rem) !important;
     padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .button-incubated-prev {
     left: var(--swiper-navigation-sides-offset, 10rem) !important;
     padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0);
   }
 }
